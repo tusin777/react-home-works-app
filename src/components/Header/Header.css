@@ -1,0 +1,7 @@
+.header-container{
+    background: linear-gradient(90deg,rgba(203, 241, 247, 1) 0%, rgb(87, 186, 199) 50%, rgb(222, 214, 144) 100%);
+    color: rgb(255, 205, 189);
+    padding: 25px;
+    text-align: center;
+    font-size: large;
+}
