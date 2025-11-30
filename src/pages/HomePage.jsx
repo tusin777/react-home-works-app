@@ -1,5 +1,5 @@
 import Button from "../components/Button/Button";
-import programmer from "../../src/assets/programmer.jpg";
+import programmer from "../assets/programmer.jpg";
 
 import "./HomePage.css";
 
