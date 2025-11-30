@@ -1,12 +1,7 @@
-.app-container {
-  padding: 20px;
-  font-family: sans-serif;
-}
+.app-container { padding:20px; font-family:sans-serif; }
 
-/* Базовые стили для всего документа */
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
-
