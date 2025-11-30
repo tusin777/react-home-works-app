@@ -9,6 +9,7 @@ import UserGreeting3Default from "../UserGreeting/UserGreetingMixed.jsx";
 import { ElementExample } from "../ElementExample/ElementExample.jsx";
 import ProductTitle from "../ProductTitle/ProductTitle.jsx";
 import { SiteInfo, UserInfo } from "../InfoBlock/InfoBlock.jsx";
+import { WelcomeMessage } from "../WelcomeMessage/WelcomeMessage.jsx";
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ export default function App() {
     <div className="app-container">
       <h1>React Lesson Template</h1>
       <p>Этот шаблон предназначен для использования в любом уроке.</p>
+      <WelcomeMessage />
       <UserGreeting />
       <UserGreeting />
       <UserGreeting />
