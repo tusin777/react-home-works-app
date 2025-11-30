@@ -1,0 +1,10 @@
+.welcome-message {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+.welcome-message h2 {
+  margin-bottom: 8px;
+}
