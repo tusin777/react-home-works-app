@@ -1,12 +1,20 @@
-import React from "react";
+const Button = ({
+  label = "Просто кнопка",
+  onClick,
+  btnStyles,
+  btnStyles2,
+}) => {
+  if (!label) {
+    console.warn("Проп 'label' не передан");
+    return null; // React-friendly
+  }
 
-const Button = ({ label, onClick, btnStyles, btnStyles2 }) => {
-  return label ? (
-    <button onClick={onClick} style={btnStyles ? btnStyles : btnStyles2}>
+  const finalStyles = btnStyles || btnStyles2;
+
+  return (
+    <button onClick={onClick} style={finalStyles}>
       {label}
     </button>
-  ) : (
-    console.warn("Пропс не передан")
   );
 };
 
