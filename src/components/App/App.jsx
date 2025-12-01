@@ -16,7 +16,7 @@ function App() {
   // };
 
   return (
-    <div className={`app ${isDarkMode ? "app app--dark" : "app app--light"}`}>
+    <div className={isDarkMode ? "app app--dark" : "app app--light"}>
       <Header clicks={clicks} text={text} />
       <ClickCounter clicks={clicks} setClicks={setClicks} />
       <ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
