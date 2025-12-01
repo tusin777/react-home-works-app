@@ -3,6 +3,7 @@ import InfoBlock from "../InfoBlock";
 import StepsList from "../StepsList";
 import InputMirror from "../InputMirror";
 import TaskList from "../TaskList";
+import Timer from "../Timer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <StepsList />
       <InputMirror />
       <TaskList />
+      <Timer />
     </div>
   );
 }
