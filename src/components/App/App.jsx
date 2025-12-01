@@ -11,10 +11,6 @@ function App() {
 
   const [text, setText] = useState("Какой-то текст");
 
-  // const handleClick = () => {
-  //   setClicks(clicks + 1);
-  // };
-
   return (
     <div className={isDarkMode ? "app app--dark" : "app app--light"}>
       <Header clicks={clicks} text={text} />

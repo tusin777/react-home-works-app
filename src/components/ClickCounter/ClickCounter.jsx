@@ -1,21 +1,7 @@
-import React, { useState } from "react";
-
-const ClickCounter = ({ title }) => {
-  const [clicks, setClicks] = useState(0);
-
-  const handleClick = () => {
-    setClicks(clicks + 1);
-  };
-
+const ClickCounter = ({ clicks, setClicks }) => {
   const handlePlusOne = () => {
     setClicks(clicks + 1);
   };
-
-  //   const handlePlusThreeWrong = () => {
-  //     setClicks(clicks + 1);
-  //     setClicks(clicks + 1);
-  //     setClicks(clicks + 1);
-  //   };
 
   const handlePlusThree = () => {
     setClicks((prev) => prev + 1);
@@ -27,15 +13,18 @@ const ClickCounter = ({ title }) => {
     setClicks(0);
   };
 
+  const warning = clicks >= 10 ? "Вы много кликнули!" : "Кликов пока немного.";
+
   return (
     <div>
-      <h2>{title}</h2>
-      <button onClick={handleClick}>Нажми меня</button>
+      <h2>Счётчик кликов</h2>
+
       <p>Счётчик: {clicks}</p>
       <button onClick={handlePlusOne}>+1 обычным обновлением</button>
-      {/* <button onClick={handlePlusThreeWrong}>+3 через три вызова</button> */}
+
       <button onClick={handlePlusThree}>+3 через три вызова</button>
       <button onClick={handleReset}>Сбросить счётчик</button>
+      <p>{warning}</p>
     </div>
   );
 };
