@@ -10,7 +10,7 @@ export default class UserProfile extends Component {
     this.setState({ name: "Маша" });
   };
 
-  updataAge = () => {
+  updateAge = () => {
     this.setState((prev) => ({ age: prev.age + 1 }));
   };
 
@@ -25,7 +25,7 @@ export default class UserProfile extends Component {
           Имя:{this.state.name} Возраст:{this.state.age}
         </p>
         <button onClick={this.updateName}>Изменить имя</button>
-        <button onClick={this.updataAge}>Изменить возраст</button>
+        <button onClick={this.updateAge}>Изменить возраст</button>
         <button onClick={this.reset}>Сброс</button>
       </div>
     );
