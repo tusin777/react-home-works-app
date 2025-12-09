@@ -1,10 +1,11 @@
+// src/components/App/App.jsx
 import "./App.css";
+import RegForm from "../RegForm/RegForm";
 
 function App() {
   return (
-    <div className="app-container">
-      <h1>React Homework Template</h1>
-      <p>Здесь будет домашнее задание к соответствующему уроку.</p>
+    <div className="app">
+      <RegForm />
     </div>
   );
 }
