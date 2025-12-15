@@ -1,6 +1,7 @@
 .app-container {
   padding: 20px;
   font-family: sans-serif;
+  background: linear-gradient(rgb(1, 1, 78), rgb(0, 53, 0));
 }
 
 /* Базовые стили для всего документа */

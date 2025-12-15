@@ -1,0 +1,170 @@
+.feedback-form-container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 12px;
+  background-color: #1f1f1f52;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+/* Сбрасываем базовые отступы у формы */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Обёртка одного поля */
+.feedback-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+/* Подпись к полю */
+.feedback-form__label {
+  font-weight: 500;
+}
+
+/* Инпуты */
+.feedback-form__input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #101010;
+  color: #f5f5f5;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.feedback-form__input:focus {
+  border-color: #3fa9ff;
+  box-shadow: 0 0 0 2px rgba(63, 169, 255, 0.3);
+}
+
+/* Блок под ошибку */
+.feedback-form__error-wrapper {
+  min-height: 18px; /* чтобы форма не дёргалась при появлении ошибки */
+}
+
+/* Текст ошибки */
+.error {
+  font-size: 12px;
+  color: #ff6816a2;
+}
+
+/* Кнопка отправки */
+.feedback-form__submit {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #3ffff5;
+  color: #0b0b0b;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.feedback-form__submit:hover {
+  background-color: #32c3bc;
+}
+
+.feedback-form__submit:active {
+  transform: translateY(1px);
+}
+
+/* Для очень узких экранов */
+@media (max-width: 480px) {
+  .feedback-form-container {
+    margin: 24px 12px;
+    padding: 16px;
+  }
+}
+
+
+/* Блок предпросмотра сообщения */
+.feedback-preview {
+  margin-top: 24px;
+  padding: 16px 18px;
+  border-radius: 10px;
+  background-color: #151515;
+  border: 1px solid #333;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+.feedback-preview__title {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+
+.feedback-preview__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.feedback-preview__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.feedback-preview__label {
+  color: #b0b0b0;
+  white-space: nowrap;
+}
+
+.feedback-preview__value {
+  color: #f5f5f5;
+  text-align: right;
+  word-break: break-word;
+}
+
+/* Счётчик символов для message */
+.feedback-preview__counter {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: right;
+  color: #b0b0b0;
+}
+
+/* Можно слегка подсветить, когда приближаемся к лимиту (опционально) */
+.feedback-preview__counter--warning {
+  color: #ffb347;
+}
+
+.feedback-preview__counter--danger {
+  color: #ff6b6b;
+}
+
+/* На узких экранах строки можно переносить в столбец */
+@media (max-width: 480px) {
+  .feedback-preview__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feedback-preview__value {
+    text-align: left;
+  }
+}
+
+
+.feedback-success {
+  margin-top: 16px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #1e3a1e;
+  color: #d4f8d4;
+  font-size: 14px;
+}
