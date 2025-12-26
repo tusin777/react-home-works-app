@@ -1,0 +1,63 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 1000;
+}
+
+.modal {
+  width: min(520px, 100%);
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 18px;
+  position: relative;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 32px;
+  height: 32px;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.closeButton:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* кнопки на странице (если вы оставили их в этом файле) */
+.openButton {
+  background-color: blue;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.openButton:hover {
+  background-color: rgb(4, 4, 180);
+}
+
+.buttonsPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: fit-content;
+}
