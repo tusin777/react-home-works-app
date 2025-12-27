@@ -9,12 +9,8 @@ const Alert = ({ title, children, tone = "info", isOpen, onClose }) => {
     <div className={rootClassName}>
       <div className={styles.header}>
         <div>
-          {title && (
-            <h2>
-              <span className={styles["icon-box"]}>&bull;</span>
-              {title}
-            </h2>
-          )}
+          <span className={styles["icon-box"]}></span>
+          {title && <h2>{title}</h2>}
         </div>
 
         <button type="button" onClick={onClose} className={styles.close}>
