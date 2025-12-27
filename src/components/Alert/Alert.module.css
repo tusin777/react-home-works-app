@@ -1,0 +1,60 @@
+.alert {
+  border-radius: 12px;
+  border: 1px solid #d0d0d0;
+  padding: 16px 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.content {
+  line-height: 1.45;
+}
+
+.close {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  font-size: 18px;
+  line-height: 1;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+/* kebab-case */
+.icon-box {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* tones */
+.info {
+  background: #eef5ff;
+  border-color: #2b6cff;
+  color: #0b2f7a;
+}
+
+.success {
+  background: #effff2;
+  border-color: #1b9d46;
+  color: #0b5b26;
+}
+
+.danger {
+  background: #fff0f0;
+  border-color: #e23b3b;
+  color: #7a0b0b;
+}

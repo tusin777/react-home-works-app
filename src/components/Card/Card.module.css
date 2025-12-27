@@ -1,0 +1,54 @@
+.card {
+  border-radius: 12px;
+  border: 1px solid #d0d0d0;
+  background: #ffffff;
+  color: #111111;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.content {
+  line-height: 1.4;
+}
+
+/* sizes */
+.sm {
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.md {
+  padding: 16px 18px;
+  font-size: 16px;
+}
+
+.lg {
+  padding: 22px 24px;
+  font-size: 18px;
+}
+
+/* tones */
+.neutral {
+  background: #ffffff;
+  border-color: #d0d0d0;
+  color: #111111;
+}
+
+.info {
+  background: #eef5ff;
+  border-color: #2b6cff;
+  color: #0b2f7a;
+}
+
+.danger {
+  background: #fff0f0;
+  border-color: #e23b3b;
+  color: #7a0b0b;
+}

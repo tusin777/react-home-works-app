@@ -1,0 +1,21 @@
+.button {
+  padding: 12px 18px;
+  min-width: 180px;
+
+  composes: base from "./Base.module.css";
+}
+
+.primary {
+  background-color: #2b6cff;
+  color: #ffffff;
+}
+
+.secondary {
+  background-color: #e7e7e7;
+  color: #111111;
+}
+
+.bottom-block {
+  padding: 16px;
+  border: 2px dashed #8a8a8a;
+}
