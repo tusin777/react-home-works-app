@@ -2,6 +2,7 @@ import { useState } from "react";
 import Modal from "../Modal/Modal";
 import Card from "../Card/Card";
 import ConfirmModal from "../ConfirmModal/ConfirmModal";
+import Stack from "../Stack/Stack";
 
 const ModalPage = () => {
   const [activeModal, setActiveModal] = useState(null);
@@ -33,7 +34,7 @@ const ModalPage = () => {
   return (
     <div>
       <Card title="Управление модалками" footer={footerCard}>
-        <div className="buttonsPanel">
+        <Stack direction="row" gap={30} align="end" className="buttonsPanel">
           <button onClick={() => toggleModal(1)} className="openButton">
             Окно 1
           </button>
@@ -43,7 +44,7 @@ const ModalPage = () => {
           <button onClick={() => toggleModal(3)} className="openButton">
             Окно 3
           </button>
-        </div>
+        </Stack>
 
         {activeModal === 1 && (
           <Modal onClose={closeModal}>
