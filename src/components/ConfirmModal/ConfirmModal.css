@@ -1,0 +1,32 @@
+.confirmActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.confirmBtn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.confirmBtn--cancel {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.confirmBtn--confirm {
+  background: #1a56db;
+  color: #fff;
+}
+
+.confirmBtn--confirm:hover {
+  opacity: 0.92;
+}
+
+.confirmBtn--cancel:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
