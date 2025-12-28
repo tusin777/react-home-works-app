@@ -1,0 +1,47 @@
+.badge {
+  composes: base from "./Base.module.css";
+}
+
+/* sizes */
+.sm {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.md {
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+/* kebab-case */
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+/* statuses */
+.new {
+  background: #eef5ff;
+  border-color: #2b6cff;
+  color: #0b2f7a;
+}
+
+.paid {
+  background: #effff2;
+  border-color: #1b9d46;
+  color: #0b5b26;
+}
+
+.shipped {
+  background: #fff6e8;
+  border-color: #ff9a2b;
+  color: #6d3b00;
+}
+
+.cancelled {
+  background: #fff0f0;
+  border-color: #e23b3b;
+  color: #7a0b0b;
+}

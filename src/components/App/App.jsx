@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import Card from "../Card/Card";
 import Alert from "../Alert/Alert";
 import "./App.css";
+import OrderStatusBadge from "../OrderStatusBadge/OrderStatusBadge";
 
 function App() {
   const [isSuccessAlertOpen, setIsSuccessAlertOpen] = useState(true);
@@ -66,6 +67,19 @@ function App() {
         Не удалось выполнить действие. Проверьте подключение к интернету и
         повторите попытку.
       </Alert>
+      <OrderStatusBadge status="new" size="sm" withDot={true}>
+        Новый
+      </OrderStatusBadge>
+      <OrderStatusBadge status="paid" size="md" withDot={true}>
+        Оплачен
+      </OrderStatusBadge>
+      <OrderStatusBadge status="shipped" size="md" withDot={true}>
+        Отправлен
+      </OrderStatusBadge>
+      <OrderStatusBadge status="cancelled" size="sm" withDot={false}>
+        Отменён
+      </OrderStatusBadge>
+      <OrderStatusBadge>По умолчанию</OrderStatusBadge>
     </div>
   );
 }
