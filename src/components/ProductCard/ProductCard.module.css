@@ -1,0 +1,49 @@
+.card {
+  composes: base from "./Base.module.css";
+}
+
+.solid {
+  background: #0b1220;
+  color: #ffffff;
+  border-color: #0b1220;
+}
+
+.outline {
+  background: #ffffff;
+  color: #111111;
+  border-color: #cfcfcf;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: 700;
+
+  padding: 6px 10px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.description {
+  margin: 0;
+  line-height: 1.45;
+  opacity: 0.9;
+}

@@ -5,6 +5,7 @@ import Card from "../Card/Card";
 import Alert from "../Alert/Alert";
 import "./App.css";
 import OrderStatusBadge from "../OrderStatusBadge/OrderStatusBadge";
+import ProductCard from "../ProductCard/ProductCard";
 
 function App() {
   const [isSuccessAlertOpen, setIsSuccessAlertOpen] = useState(true);
@@ -80,6 +81,21 @@ function App() {
         Отменён
       </OrderStatusBadge>
       <OrderStatusBadge>По умолчанию</OrderStatusBadge>
+      <ProductCard
+        title="Кофеварка"
+        price="249 zł"
+        description="loren loren loren"
+        badge="Хит"
+        variant="solid"
+      />
+      <ProductCard
+        title="Наушники"
+        price="199 zł"
+        badge="Скидка -15%"
+        variant="outline"
+        className="demoCard"
+      />
+      <ProductCard title="Рюкзак" price="129 zł" />
     </div>
   );
 }
