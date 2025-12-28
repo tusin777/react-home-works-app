@@ -8,7 +8,7 @@ const ProductCard = ({
   variant = "solid",
   className,
 }) => {
-  if (!title && !price) return null;
+  if (!title || !price) return null;
 
   const normalizedVariant = variant === "outline" ? "outline" : "solid";
 

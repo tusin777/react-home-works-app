@@ -95,7 +95,11 @@ function App() {
         variant="outline"
         className="demoCard"
       />
-      <ProductCard title="Рюкзак" price="129 zł" />
+      <ProductCard
+        title="Рюкзак"
+        price="129 zł"
+        description="loren loren loren"
+      />
     </div>
   );
 }
