@@ -6,16 +6,29 @@ import Alert from "../Alert/Alert";
 import "./App.css";
 import OrderStatusBadge from "../OrderStatusBadge/OrderStatusBadge";
 import ProductCard from "../ProductCard/ProductCard";
+import Tabs from "../Tabs/Tabs";
 
 function App() {
   const [isSuccessAlertOpen, setIsSuccessAlertOpen] = useState(true);
   const [isDangerAlertOpen, setIsDangerAlertOpen] = useState(true);
+
+  const [activeTabId, setActiveTabId] = useState("description");
 
   const closeSuccessAlert = () => setIsSuccessAlertOpen(false);
   const openSuccessAlert = () => setIsSuccessAlertOpen(true);
 
   const closeDangerAlert = () => setIsDangerAlertOpen(false);
   const openDangerAlert = () => setIsDangerAlertOpen(true);
+
+  const items = [
+    { tabId: "description", label: "Описание" },
+
+    { tabId: "specs", label: "Характеристики" },
+
+    { tabId: "reviews", label: "Отзывы" },
+
+    { tabId: "delivery", label: "Доставка", disabled: true },
+  ];
 
   return (
     <div className="app-container">
@@ -100,6 +113,13 @@ function App() {
         price="129 zł"
         description="loren loren loren"
       />
+      <Tabs items={items} activeId={activeTabId} onChange={setActiveTabId} />
+      <p className="tab-content">
+        {(activeTabId === "description" && "Раздел: описание товара.") ||
+          (activeTabId === "specs" && "Раздел: характеристики товара.") ||
+          (activeTabId === "reviews" && "Раздел: отзывы покупателей.") ||
+          (activeTabId === "delivery" && "Раздел: доставка.")}
+      </p>
     </div>
   );
 }
